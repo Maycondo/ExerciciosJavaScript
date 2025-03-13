@@ -1,0 +1,123 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+.title h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 8px auto;
+    border-radius: 2px;
+}
+
+.img-container {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #007bff;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+    margin-top: 10px;
+}
+
+#job {
+    color: #007bff;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.button-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prev-bnt,.next-bnt,
+.random-btn {
+    background-color: #007BFF; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-bnt i {
+    font-size: 20px;
+}
+
+.next-bnt i {
+    font-size: 20px;
+}
+
+.prev-bnt:hover,.next-bnt:hover,
+.random-btn:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: scale(1.05);
+}
+
+.prev-bnt:active,.next-bnt:active,
+.random-btn:active {
+    transform: scale(0.95);
+}
+
