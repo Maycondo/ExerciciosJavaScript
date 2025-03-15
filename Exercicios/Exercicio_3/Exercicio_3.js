@@ -41,7 +41,7 @@ const text = document.getElementById("text")
 
 const prevBtn = document.querySelector(".prev-bnt")
 const nextBtn = document.querySelector(".next-bnt")
-const randomBtn = document.querySelector(".random-bnt")
+const randomBtn = document.querySelector(".random-btn")
 
 let currentItem = 0;
 
@@ -70,6 +70,11 @@ prevBtn.addEventListener('click', function() {
     if(currentItem < 0) {
         currentItem = reviews.length - 1;
     }
+    showPerson();
+})
+
+randomBtn.addEventListener('click', function () {
+    currentItem = Math.floor(Math.random() * reviews.length);
     showPerson();
 })
 

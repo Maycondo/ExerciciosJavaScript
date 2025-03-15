@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle:hover {
+    color: #333;
+    transform: rotate(90deg);
+    transition: all 1s ease-in;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .nav-links-active {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .nav-links-active li {
+        text-align: center;
+        padding: 0.75rem 0;
+
+    }
+
+    .nav-links-active a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links-active a:hover {
+        color: #007bff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 0.75rem 0;
+    }
+}
