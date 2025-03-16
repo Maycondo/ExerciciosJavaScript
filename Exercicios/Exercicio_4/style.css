@@ -54,13 +54,13 @@ nav {
     transition: all 1s ease-in;
 }
 
-.nav-links {
+.nav-link {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
-.nav-links a {
+.nav-link a {
     text-decoration: none;
     color: #333;
     font-size: 1rem;
@@ -68,7 +68,7 @@ nav {
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link a:hover {
     color: #007bff;
 }
 
@@ -77,7 +77,7 @@ nav {
         display: block;
     }
 
-    .nav-links {
+    .nav-link {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -95,6 +95,7 @@ nav {
         position: absolute;
         top: 110px;
         left: 0;
+        transition: all ease-in-out;
         width: 100%;
         background: #fff;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
