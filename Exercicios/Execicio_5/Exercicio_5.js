@@ -1,4 +1,3 @@
-
 const toggleBtn = document.querySelector(".siedebar-toggle")
 const closeBtn = document.querySelector(".close-btn")
 const sideNav = document.querySelector(".sidebar")
